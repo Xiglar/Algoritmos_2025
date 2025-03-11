@@ -7,7 +7,13 @@ def sort_string_array(arr):
     :return: None - The array is modified in-place
     """
     # Implement the sorting algorithm here
-    pass
+    lenght = len(arr)
+    for i in range(lenght):
+        j = 0
+        while  j <= lenght - 2 and arr[j] > arr[j+1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            j += 1
+            
 
 # Test Cases
 def test_sort_string_array():

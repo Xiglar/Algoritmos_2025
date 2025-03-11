@@ -9,7 +9,11 @@ def find_all_occurrences(arr, element):
     :return: List[int] - A list of positions where the element is found
     """
     # Implement the algorithm to find all occurrences here
-    pass
+    for i in range(len(arr)):
+        if(arr[i] == element):
+            return i
+
+    return -1
 
 # Test Cases
 def test_find_all_occurrences():

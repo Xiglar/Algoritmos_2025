@@ -78,4 +78,4 @@ Se necesita desarrollar un sistema capaz de calcular la **mediana** de un conjun
 
 <!-- Falso No garantiza la correcta estructura del hea -->
 5. Hacer heap-down desde el primero al último  
-
+****

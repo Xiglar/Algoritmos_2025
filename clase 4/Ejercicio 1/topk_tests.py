@@ -2,8 +2,18 @@ import heapq
 
 def find_top_k(arr, k):
     # TODO
+    top_k = []
 
-    return arr
+    for i in range(len(arr)): 
+        top_k_len = len(top_k)
+        if(top_k_len < k):
+            heapq.heappush(top_k,  arr[i])
+            continue
+        if(arr[i] > heapq.nsmallest(1, top_k)[0]):
+            heapq.heappop(top_k)
+            heapq.heappush(top_k,  arr[i])
+
+    return top_k
 
 # TESTS
 def run_tests():

@@ -5,6 +5,8 @@
 // Función para encontrar la mediana después de cada inserción
 void find_median(int* arr, int n, double* medians) {
     // Completar implementación
+
+        
 }
 
 // TESTS

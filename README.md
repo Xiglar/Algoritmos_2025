@@ -1,4 +1,4 @@
-# 🎯 Clase de Problemas – Algoritmos y Estructuras de Datos  
+**# 🎯 Clase de Problemas – Algoritmos y Estructuras de Datos  
 
 ¡Bienvenidos! En este repositorio encontrarás el material de las **clases de problemas** de **Algoritmos y Estructuras de Datos**.  
 
@@ -53,3 +53,4 @@ Cada semana habrá un **desafío** y se otorgarán puntos según estas reglas:
 
 Si tienes alguna consulta, no dudes en preguntar. ¡Nos vemos en clase! 🎓
 
+**

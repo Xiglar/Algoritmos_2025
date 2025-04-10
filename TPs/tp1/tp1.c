@@ -227,22 +227,17 @@ Matriz* copy_array_of_matrices(const Matriz *array_of_matrices, const Matriz mat
 }
 
 void free_array_of_matrices(Matriz* array_of_matrices, Matriz matrix_dimensions, int array_lenght) {
-    if (array_of_matrices == NULL) {
-        return;
-    }
+    if(array_of_matrices == NULL || array_lenght == 0) return;
 
-    for (int i = 0; i < array_lenght; i++) {
-        if (array_of_matrices[i] != NULL) {
-            int rows = matrix_dimensions[i][0];
-
-            for (int j = 0; j < rows; j++) {
-                free(array_of_matrices[i][j]);
-            }
-
-            free(array_of_matrices[i]);
+    for(int i = 0; i < array_lenght; i++){
+        for(int j = 0; j < matrix_dimensions[i][0]; j++){
+            free(array_of_matrices[i][j]);
         }
-    }
 
+        free(array_of_matrices[i]);
+        free(matrix_dimensions[i]);
+    }
     free(array_of_matrices);
+    free(matrix_dimensions);
 }
 

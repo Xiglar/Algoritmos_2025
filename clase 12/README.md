@@ -30,7 +30,7 @@ Se garantiza que cada par no ordenado de amigos aparece como mucho una vez, y qu
 
 #### Entrada
 
-Si son 3 perfiles y 2 relaciones de amistad, las cuales son:
+Si son 3 perfiles y 2 relaciones de amistad:
 
 ```
 1 2
